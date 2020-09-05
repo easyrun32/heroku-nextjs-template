@@ -62,6 +62,10 @@ if (!dev && cluster.isMaster) {
       return nextApp.render(req, res, "/a", queryParams);
     });
 
+    app.get("/data", (req, res) => {
+      return res.json({ data: "Secret Information" });
+    });
+
     // Example app-side routing
     app.get("/b", (req, res) => {
       console.log("app from route b");
