@@ -55,7 +55,7 @@ if (!dev && cluster.isMaster) {
     // Example app-side routing
     app.get("/a", (req, res) => {
       const OBJECT_A = {
-        A: "I WILL GET SOMETHING FROM MONGO AND SEND IT HERE???",
+        A: "I WILL GET SOMETHING FROM MONGO ",
       };
       const queryParams = { id: OBJECT_A };
       console.log("app from route a");

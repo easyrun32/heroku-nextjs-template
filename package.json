@@ -4,9 +4,9 @@
   "description": "Back-end of Travel planner application to keep track of itineraries, tickets, budgets, todo lists and many more",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js -p $PORT",
+    "dev": "nodemon server/index.js -p $PORT",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js -p $PORT"
+    "start": "NODE_ENV=production node server/index.js -p $PORT"
   },
   "repository": {
     "type": "git",
